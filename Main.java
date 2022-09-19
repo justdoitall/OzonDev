@@ -32,6 +32,7 @@ public class Main {
 
 
     public static void main(String[] args) {
+        System.out.println("Во время вашего хода выбирайте поле из следующих значений: {A1...C3}");
         Arrays.fill(arrangement, 0);
         firstTurn();
         while (!isOver) {
@@ -74,6 +75,7 @@ public class Main {
                 firstTurn();
             }
         }
+        System.out.println("Ваш ход:");
     }
 
     static void playerTurn() {
